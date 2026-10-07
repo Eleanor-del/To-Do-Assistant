@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>�������� v3.1.1</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Windows��������</h2>
+  <div class="setting-bar">
+    <label><input type="checkbox" id="widgetAutoStart"> ������ʱ�Զ���������</label>
+    <button id="openWidgetBtn">��͸��������</button>
+  </div>
+
+  <div class="add-area">
+    <h3>�½�����</h3>
+    <input type="text" id="todoTitle" placeholder="�����������">
+    <input type="datetime-local" id="todoRemind">
+    <select id="todoCategory">
+      <option value="����">����</option>
+      <option value="����">����</option>
+    </select>
+    <input type="file" id="todoAttachment" multiple>
+    <button id="addTodoBtn">��Ӵ���</button>
+  </div>
+
+  <div class="todo-list" id="todoList"></div>
+</div>
+<script src="js/main-render.js"></script>
+</body>
+</html>
