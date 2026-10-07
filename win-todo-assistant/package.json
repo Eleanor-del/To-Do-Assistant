@@ -1,0 +1,29 @@
+{
+  "name": "win-todo-assistant",
+  "version": "3.1.1",
+  "description": "Windows�������������֣���͸�������������",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "electron": "^32.0.0"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "win_todo_assistant",
+            "icon": "./assets/icon.ico",
+            "setupIcon": "./assets/icon.ico"
+          }
+        }
+      ]
+    }
+  }
+}
